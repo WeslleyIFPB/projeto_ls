@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Tarefas Pessoais</title>
+    <link rel="stylesheet" href="src/css/style.css"> 
+</head>
+<body class="bg-gray-100">
+
+    <!-- Cabeçalho -->
+    <header class="bg-green-500 text-white text-center py-6">
+        <h1 class="text-3xl font-bold">Gestão de Tarefas</h1>
+    </header>
+
+    <!-- Formulário para adicionar nova tarefa -->
+    <section id="nova-tarefa" class="max-w-lg mx-auto p-6 mt-8 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4">Nova Tarefa</h2>
+        <form id="form-tarefa" class="space-y-4">
+            <div>
+                <input type="text" id="tarefa" placeholder="O que você precisa fazer?" 
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+            <div>
+                <input type="date" id="data-vencimento" 
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+            <button type="submit" 
+                class="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">
+                Adicionar
+            </button>
+        </form>
+    </section>
+
+    <!-- Lista de tarefas -->
+    <section id="lista-tarefas" class="max-w-lg mx-auto p-6 mt-8">
+        <h2 class="text-2xl font-semibold mb-4">Tarefas Pendentes</h2>
+        <ul id="tarefas" class="space-y-4">
+            <!-- As tarefas serão inseridas aqui dinamicamente -->
+        </ul>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8 mb-4">
+        <p>&copy; 2025 Gestão de Tarefas Pessoais</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
