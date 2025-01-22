@@ -34,16 +34,20 @@
                 class="w-full mt-1 px-3 py-2 border rounded-md text-gray-700 focus:ring-blue-500 focus:border-blue-500">
             
             <button type="submit" 
-                class="w-full mt-3 bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500" onclick="./src/html/home.html">
+                class="w-full mt-3 bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500" onclick="abrirPagina()">
                 Entrar
             </button>
-            
+            <script>
+                function abrirPagina() {
+                    window.location.href = "projeto_ls/src/html/home.html"
+                }
+            </script>
         </form>
     </section>
 
     <!-- Lista de tarefas -->
     <section id="lista-tarefas" class="max-w-lg mx-auto p-6 mt-8">
-        <h2 class="text-2xl font-semibold mb-4">Não tem uma conta? <a href="#">Registre-se</a></h2>
+        <h2 class="text-2xl font-semibold mb-4 text-center">Não tem uma conta? <a href="#">Registre-se</a></h2>
     </section>
 
     <!-- Rodapé -->
@@ -51,6 +55,6 @@
         <p>&copy; 2025 Gestão de Tarefas Pessoais</p>
     </footer>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>
